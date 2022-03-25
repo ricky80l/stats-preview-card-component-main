@@ -108,9 +108,15 @@ h2 {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width:1102px) {
+@media screen and (max-width:68.875rem) {
     .attribution {
         display: none;
+    }
+}
+
+@media screen and (max-width:62.875rem) {
+    .main {
+        padding: 4.2rem 4.2rem;
     }
 }
 
@@ -119,7 +125,7 @@ h2 {
         text-align: center;
     }
     .main {
-        padding: 3rem 3.75rem;
+        padding: 3rem 3rem;
     }
     .image_section {
         float: left;
