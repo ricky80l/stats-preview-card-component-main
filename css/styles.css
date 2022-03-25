@@ -1,0 +1,143 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9375rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* MAIN SECTION */
+
+.main {
+    background-color: hsl(233, 47%, 7%);
+    padding: 8.75rem;
+    height: auto;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.textual_section {
+    padding: 3.6rem;
+}
+
+.title {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.title,
+h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+.main_p {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 2.3rem;
+}
+
+.label {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.image_section {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+}
+
+.filtro {
+    background-image: url(../images/image-header-desktop.jpg);
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    background-size: cover;
+}
+
+.image_section img {
+    mix-blend-mode: multiply;
+    border-radius: 0 10px 10px 0;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* FOOTER SECTION */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5rem;
+    position: fixed;
+    bottom: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:1102px) {
+    .attribution {
+        display: none;
+    }
+}
+
+@media screen and (max-width:48rem) {
+    * {
+        text-align: center;
+    }
+    .main {
+        padding: 3rem 5.75rem;
+    }
+    .image_section {
+        float: left;
+    }
+    .textual_section {
+        padding: 2rem;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+    .image_section {
+        border-radius: 10px 10px 0 0;
+    }
+    .image_section img {
+        border-radius: 10px 10px 0 0;
+    }
+}
